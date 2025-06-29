@@ -3,7 +3,6 @@ from __future__ import annotations
 from langchain_core.documents import Document
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama.llms import OllamaLLM
-
 from vector import vectorize
 
 

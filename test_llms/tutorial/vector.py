@@ -16,6 +16,7 @@ def vectorize(
 ) -> VectorStoreRetriever:
     df = pd.read_csv(file_path)
     df.columns = list(map(str.lower, df.columns))
+    # TODO: refactor to check for new changes
     add_documents: bool = not os.path.exists(DB_LOCATION)
     embedddings = OllamaEmbeddings(model="mxbai-embed-large")
     vector_store = Chroma(

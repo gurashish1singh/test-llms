@@ -1,3 +1,3 @@
 # Test LLMs
 
-Just testing lanchain and LLMs
+This is an LLM playground repository.
